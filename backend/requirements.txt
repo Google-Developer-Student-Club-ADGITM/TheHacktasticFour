@@ -2,3 +2,5 @@ flask
 flask[async]
 python-dotenv
 requests
+hugchat
+json
