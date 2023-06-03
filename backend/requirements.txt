@@ -1,3 +1,4 @@
 flask
+flask[async]
 python-dotenv
 requests

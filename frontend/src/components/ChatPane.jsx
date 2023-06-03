@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import InputBox from "./chatPane/inputBox";
 import MessageBox from "./chatPane/messageBox";
 
 function ChatPane() {
+    
+    const messagesEndRef = useRef(null);
+    const [messages, setMessages] = useState([]);
+
 
     return (
         <div className="chatPaneContainer">
@@ -12,17 +16,20 @@ function ChatPane() {
             </div>
 
             <div className="MessagesContainer">
-                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                {messages}
+                
+                <div id={"Messageanchor"} />
+                {/* <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd udud du du"} bot={false} />
                 <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
-                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
-                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd udud du du"} bot={false} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd udud du du"} bot={false} />
                 <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
                 <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
-                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
-                <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd udud du du"} bot={false} />
+                <MessageBox content={"huehuehue jeueujue hue"} bot={true} /> */}
             </div>
 
-            <InputBox />
+            <InputBox setMessages={setMessages}/>
         </div>
     )
 }
