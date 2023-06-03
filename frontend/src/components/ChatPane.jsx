@@ -12,21 +12,14 @@ function ChatPane() {
             </div>
 
             <div className="MessagesContainer">
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
-                <MessageBox />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
+                <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
+                <MessageBox content={"lakslaklskalksksskdhhdhdhdhhdhdhdhdhhdhd        udud du du"} bot={false} />
+                <MessageBox content={"huehuehue jeueujue hue"} bot={true} />
             </div>
 
             <InputBox />
