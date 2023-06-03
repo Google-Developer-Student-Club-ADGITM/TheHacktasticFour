@@ -1,0 +1,102 @@
+:root {
+    --headerHeight: 4rem
+}
+
+.mainChatContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: calc(100vh - var(--headerHeight));
+}
+
+.chatSelectPaneContainer, .chatPaneContainer {
+    height: inherit;
+    position: relative;
+}
+
+.chatSelectPaneContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.chatPaneContainer {
+    background-color: whitesmoke;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.introTextContainer {
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+}
+
+.InputBoxContainer {
+    position: relative;
+    width: inherit;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+.InputBox {
+    width: 100%;
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.InputFormHolder {
+    background-color: lightgrey;
+    border-radius: 6px;
+}
+
+.MessagesContainer {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: 0 10px;
+}
+
+.MessageBoxContainer {
+    min-width: 5rem;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: left/right; */
+}
+
+.MessageBodyContainer {
+    max-width: 60%;
+    width: fit-content;
+    background-color: darkslategrey;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+
+}
+
+.ProfileContainer {
+    border-radius: 100%;
+    width: 50px;
+    height: 47px;
+    background-color: darkslategrey;
+    margin-right: 5px;
+}
+
+.header {
+    width: 100vw;
+    height: var(--headerHeight);
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
