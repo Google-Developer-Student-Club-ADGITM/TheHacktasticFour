@@ -2,8 +2,11 @@ from flask import Flask, request
 import random
 import string
 import time
+from chatbot import evalQuery, inference_api, setup_auth
 
 app = Flask(__name__)
+setup_auth()
+ChatBotInstance = inference_api()
 
 @app.route("/")
 def hello_world():
@@ -13,9 +16,11 @@ def hello_world():
 async def handleQuery():
     time.sleep(1)
     query = request.json
-    # output = await generate_output_via_ML(query)
-    output = ''.join((random.choice(string.ascii_lowercase) for x in range(10)))
+
+    output = await evalQuery(query['query'], ChatBotInstance)
+    
+#    output = ''.join((random.choice(string.ascii_lowercase) for x in range(10)))
     return {"status": "ok", "output": output}
 
 if __name__ == "__main__":
-    app.run(host="localhost", port=8080)
+    app.run(host="localhost", port = 8080)
