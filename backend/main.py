@@ -14,7 +14,6 @@ def hello_world():
 
 @app.post("/api/query")
 async def handleQuery():
-    time.sleep(1)
     query = request.json
 
     output = await evalQuery(query['query'], ChatBotInstance)
