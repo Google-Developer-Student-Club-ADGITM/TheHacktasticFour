@@ -1,0 +1,5 @@
+This project uses a transformer model developed by [LAION](https://laion.ai/) based on the weights of Meta's LLaMA LLM introduced recently. The LLM used is [oasst-sft-6-llama-30b](https://huggingface.co/OpenAssistant/oasst-sft-6-llama-30b-xor). The inference API is provided by HuggingFace's HuggingChat.
+We use Instruction-Prompt-Tuning to guide the model. These instructions provide a structured framework for the chatbot's responses and guide its behavior to act like a medical chatbot.
+By passing these instructions prior to starting each conversation, we ensure that the chatbot follows a consistent approach and provides relevant information and guidance to the user. These instructions help shape the initial prompt and subsequent responses of the chatbot, making it more effective in assisting users with their healthcare concerns.
+We weighed the pros and cons of IPT/Soft-tuning over fine-tuning the model over the given limited duration of the hackathon, and we found IPT/Soft-tuning to be a good trade-off given the other technicalities such as deployment, and inference costs.
+
