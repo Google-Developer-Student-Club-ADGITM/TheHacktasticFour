@@ -2,6 +2,10 @@
     --headerHeight: 4rem
 }
 
+input:focus {
+    outline: none;
+}
+
 .mainChatContainer {
     display: flex;
     flex-direction: row;
@@ -83,7 +87,7 @@
 }
 
 .MessageBodyContainer {
-    max-width: 30rem;
+    max-width: 60%;
     width: fit-content;
     background-color: darkslategrey;
     height: fit-content;
@@ -109,4 +113,17 @@
     background-color: brown;
     display: flex;
     align-items: center;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    .chatSelectPaneContainer {
+        display: none;
+    }
+
+    .header_head {
+        height: auto;
+        width: 250px;
+    }
 }

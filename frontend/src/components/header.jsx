@@ -4,8 +4,8 @@ function Header() {
 
     return (
         <div className="header">
-            <img src="/logo.png" height={50}></img>
-            <img src="/head.png" height={50}></img>
+            <img src="/logo.png" height={50} className="header_logo"></img>
+            <img src="/head.png" height={50} className="header_head"></img>
         </div>
     )
 }
