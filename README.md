@@ -25,7 +25,7 @@ Wellness Whiz is an AI-based healthcare chatbot designed to provide personalized
 - Healthy Lifestyle Tips: The chatbot provides users with tips and suggestions to lead a healthy lifestyle, including exercise routines, nutrition advice, and stress management techniques.
 - 24/7 Availability: Wellness Whiz is available round the clock to assist users with their healthcare queries and concerns
 
-## Run Locally
+## Getting Started
 
 To use Wellness Whiz, follow these steps:
 
