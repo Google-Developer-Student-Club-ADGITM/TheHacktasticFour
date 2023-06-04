@@ -30,11 +30,39 @@ Wellness Whiz is an AI-based healthcare chatbot designed to provide personalized
 To use Wellness Whiz, follow these steps:
 
 - Clone the Wellness Whiz repository from GitHub.
+```bash
+git clone https://github.com/Google-Developer-Student-Club-ADGITM/TheHacktasticFour.git
+```
+- Install the required dependencies for the frontend and backend specified in the documentation. You must have `node.js` installed.
 
-- Install the required dependencies specified in the documentation.
+For Linux:
+```bash
+cd TheHacktasticFour/frontend/ && npm install
+cd ../backend/ && pip install -r requirements.txt
+```
+
+For Windows:
+```powershell
+cd .\TheHacktasticFour\frontend\; npm install
+cd ..\backend\; pip install -r requirements.txt
+```
+- Specify your HuggingFace credentials in `chatbot.py`. You can remove them after the initialization.
 - Run the application locally or deploy it to your preferred hosting platform.
-- Access the application through a web browser or integrate it into your existing system using the provided API endpoints.
-- Customize the chatbot's responses, behaviors, and integration points as per your requirements
+
+To run locally:
+
+For Linux:
+```bash
+cd TheHacktasticFour/backend/ && python main.py
+cd TheHacktasticFour/frontend/ && npm run dev
+```
+For Windows:
+```ps1
+cd .\TheHacktasticFour\backend\; python main.py
+cd .\TheHacktasticFour\frontend\; npm run dev
+```
+- Access the application through a web browser or integrate it into your existing system using the provided API endpoints. Go to http://localhost:5173/.
+- Customize the chatbot's responses, behaviors, and integration points as per your requirements.
 
 ## Usage/Examples
 
